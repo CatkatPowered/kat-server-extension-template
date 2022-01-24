@@ -1,0 +1,8 @@
+{
+    "main": "org.example.extension.Extension",
+    "extension": "example extension",
+    "version": "1.0.0",
+    "website": "https://catkatpowered.com",
+    "author": "cat kat community",
+    "depend": ""
+}

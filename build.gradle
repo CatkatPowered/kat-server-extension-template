@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-dev'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repository.hanbings.io/snapshots' }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+
+    implementation 'com.catkatpowered.katserver:kat-server:1.0.0-dev'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+}
+
+test {
+    useJUnitPlatform()
+}
